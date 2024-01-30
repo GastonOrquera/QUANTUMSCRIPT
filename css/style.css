@@ -255,6 +255,7 @@ header .hamburger div {
 
     .background {
         height: 100%;
+        overflow: hidden;
     }
 
     header {
