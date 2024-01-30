@@ -90,13 +90,14 @@ header nav {
 
 header nav.active {
     display: block;
+    top: 4rem;
+    padding: 2rem 2rem;
 }
 
 header nav ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
     height: 100%;
     gap: 1rem;
 }
@@ -157,8 +158,9 @@ header .hamburger div {
 }
 
 .active .one {
-    transform: rotate(45deg) translate(1px, 7px);
-    /* Ajustes de posición */
+    /* transform: rotate(45deg) translate(1px, 7px); */
+    transform: rotate(45deg) translate(1px, 4px);
+
 }
 
 .active .two {
@@ -166,8 +168,8 @@ header .hamburger div {
 }
 
 .active .three {
-    transform: rotate(-45deg) translate(1px, -8px);
-    /* Ajustes de posición */
+    /* transform: rotate(-45deg) translate(1px, -8px); */
+    transform: rotate(-45deg) translate(4px, -8px);
 }
 
 /* END PRUEBA */
@@ -251,9 +253,22 @@ header .hamburger div {
 
 @media only screen and (max-width: 1000px) {
 
+    .background {
+        height: max-content;
+    }
+
     header {
         padding: 1rem 1rem;
     }
+
+    header nav.active {
+        display: block;
+        top: 4rem;
+        padding: 2rem 1rem;
+
+    }
+
+
 
     .conteinerMain {
         flex-direction: column;
@@ -261,6 +276,7 @@ header .hamburger div {
         padding: 2rem 1rem;
         justify-content: start;
         align-items: start;
+
     }
 
     .conteinerMain .boxOne {
@@ -273,6 +289,17 @@ header .hamburger div {
 
     .conteinerMain .boxOne .parrafoMain {
         font-size: .830rem;
+        margin-left: 0;
+    }
+
+    .conteinerMain .boxOne .parrafoMainSecondary {
+        font-size: .830rem;
+        margin-left: 0;
+    }
+
+    .conteinerMain .boxOne .btnMain {
+        margin-left: 0;
+        padding: .480rem 2rem;
     }
 
     .conteinerMain .imgBackground {
