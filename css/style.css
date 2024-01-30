@@ -72,7 +72,7 @@ header nav {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29cb);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     animation: pantalla 1s ease-in-out normal;
-
+    z-index: 998;
 }
 
 @keyframes pantalla {
@@ -90,7 +90,6 @@ header nav {
 
 header nav.active {
     display: block;
-
 }
 
 header nav ul {
@@ -157,8 +156,12 @@ header .hamburger div {
     font-family: var(--font-titulos);
     color: #DD0556;
     font-size: 3.2rem;
-    z-index: -1;
+    z-index: 1;
 }
+
+/* .conteinerMain .boxOne .titleMain.active {
+    color: transparent;
+} */
 
 .conteinerMain .boxOne .parrafoMain {
     font-family: var(--font-parrafos);

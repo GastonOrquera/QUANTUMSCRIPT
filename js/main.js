@@ -4,8 +4,11 @@ var nav = document.querySelector('nav');
 
 var navLinks = document.querySelectorAll('nav a');
 
+var title = document.querySelector('.titleMain');
+
 hamburger.onclick = function () {
     nav.classList.toggle('active');
+    title.classList.toggle('active');
 }
 
 navLinks.forEach(function (link) {
