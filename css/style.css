@@ -64,7 +64,13 @@ header nav {
     bottom: 0;
     right: 0;
     /* background-color: #4c2750; */
-    background-color: #46294b;
+    /* background-color: #46294b; */
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29c0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29cb);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     animation: pantalla 1s ease-in-out normal;
 
 }
@@ -100,11 +106,12 @@ header nav ul li a {
     font-family: var(--font-parrafos);
     color: #FDFFFA;
     /* color: #3F2443; */
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 header nav ul li a:hover {
-    color: #a864b4;
+    /* color: #a864b4; */
+    color: #DD0556;
 }
 
 header .hamburger {
@@ -150,6 +157,7 @@ header .hamburger div {
     font-family: var(--font-titulos);
     color: #DD0556;
     font-size: 3.2rem;
+    z-index: -1;
 }
 
 .conteinerMain .boxOne .parrafoMain {
