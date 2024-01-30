@@ -113,13 +113,13 @@ header nav ul li a:hover {
     color: #DD0556;
 }
 
-header .hamburger {
+/* header .hamburger {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    /* background-color: darkgreen; */
-    gap: 2px;
+  
+
     width: 22px;
     height: 22px;
     cursor: pointer;
@@ -129,10 +129,48 @@ header .hamburger {
 header .hamburger div {
     width: 16px;
     height: 2px;
-    /* background-color: rgb(175, 247, 104); */
-    /* background-color: #FDFFFA; */
+   
     background-color: #DD0556;
+} */
+
+/* PRUEBA */
+
+.hamburger {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.5s ease;
 }
+
+.one,
+.two,
+.three {
+    width: 16px;
+    height: 2px;
+    background-color: #DD0556;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.active .one {
+    transform: rotate(45deg) translate(1px, 7px);
+    /* Ajustes de posición */
+}
+
+.active .two {
+    opacity: 0;
+}
+
+.active .three {
+    transform: rotate(-45deg) translate(1px, -8px);
+    /* Ajustes de posición */
+}
+
+/* END PRUEBA */
 
 /* END HEADER */
 
@@ -220,7 +258,7 @@ header .hamburger div {
     .conteinerMain {
         flex-direction: column;
         gap: 2rem;
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
         justify-content: start;
         align-items: start;
     }
