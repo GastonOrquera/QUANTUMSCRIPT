@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Passero+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --font-titulos: 'Passero One', sans-serif;
+    --font-parrafos: 'Bruno Ace', sans-serif;
+}
+
+.background {
+    /* background-color: #3F2443; */
+    height: 100vh;
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2rem;
+}
+
+header .titleHeader {
+    font-family: var(--font-titulos);
+    font-size: 26px;
+    /* color: #FDFFFA; */
+    color: #DD0556;
+    /* color: rgb(175, 247, 104); */
+    z-index: 999;
+}
+
+header .titleHeader:hover {
+    animation: bgTitle 4s ease-in-out normal;
+}
+
+@keyframes bgTitle {
+    0% {
+        color: #DD0556;
+    }
+
+    100% {
+        color: #e70659;
+    }
+}
+
+header nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background-color: #4c2750; */
+    background-color: #46294b;
+    animation: pantalla 1s ease-in-out normal;
+
+}
+
+@keyframes pantalla {
+
+    0% {
+
+        right: 100%;
+    }
+
+    100% {
+        height: 100%;
+    }
+
+}
+
+header nav.active {
+    display: block;
+
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    font-family: var(--font-parrafos);
+    color: #FDFFFA;
+    /* color: #3F2443; */
+    font-size: 1.6rem;
+}
+
+header nav ul li a:hover {
+    color: #a864b4;
+}
+
+header .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: darkgreen; */
+    gap: 2px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+header .hamburger div {
+    width: 16px;
+    height: 2px;
+    /* background-color: rgb(175, 247, 104); */
+    /* background-color: #FDFFFA; */
+    background-color: #DD0556;
+}
+
+/* END HEADER */
+
+/* START MAIN */
+
+.conteinerMain {
+    padding: 2rem 2rem;
+    /* background-color: #a864b4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteinerMain .boxOne {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.conteinerMain .boxOne .titleMain {
+    font-family: var(--font-titulos);
+    color: #DD0556;
+    font-size: 3.2rem;
+}
+
+.conteinerMain .boxOne .parrafoMain {
+    font-family: var(--font-parrafos);
+    color: #FDFFFA;
+    margin-top: .8rem;
+    margin-left: 1rem;
+}
+
+.conteinerMain .boxOne .btnMain {
+    background-color: #DD0556;
+    padding: .6rem 2rem;
+    font-family: var(--font-parrafos);
+    color: white;
+    border: 1px solid transparent;
+    width: max-content;
+    border-radius: 4px;
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+}
+
+.conteinerMain .boxOne .btnMain:hover {
+    border: 1px solid #DD0556;
+    background-color: #dd055441;
+    transition: 1s;
+}
+
+.conteinerMain .boxOne .spanOne {
+    color: #DD0556;
+    font-family: var(--font-parrafos);
+}
+
+.conteinerMain .boxOne .parrafoMainSecondary {
+    font-family: var(--font-parrafos);
+    /* color: #fdfffa67; */
+    color: #fdfffa50;
+    line-height: 1.6rem;
+    margin-left: 1.4rem;
+    margin-top: .8rem;
+}
+
+.conteinerMain .imgBackground {
+    background-image: url(../img/imgBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 50%;
+    border-radius: 260px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    header {
+        padding: 1rem 1rem;
+    }
+
+    .conteinerMain {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem 1rem;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .conteinerMain .boxOne {
+        width: 100%;
+    }
+
+    .conteinerMain .boxOne .titleMain {
+        font-size: 2.2rem;
+    }
+
+    .conteinerMain .boxOne .parrafoMain {
+        font-size: .830rem;
+    }
+
+    .conteinerMain .imgBackground {
+        background-position: center;
+        border-radius: 60px;
+        width: 100%;
+        height: 320px;
+    }
+
+
+}
