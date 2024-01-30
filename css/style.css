@@ -254,7 +254,7 @@ header .hamburger div {
 @media only screen and (max-width: 1000px) {
 
     .background {
-        height: max-content;
+        height: 100%;
     }
 
     header {
