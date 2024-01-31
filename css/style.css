@@ -71,15 +71,14 @@ header nav {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29cb);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    animation: pantalla 1s ease-in-out normal;
+    animation: pantalla 2s ease alternate;
     z-index: 998;
 }
 
 @keyframes pantalla {
 
     0% {
-
-        right: 100%;
+        left: 100%;
     }
 
     100% {
@@ -199,10 +198,6 @@ header .hamburger div {
     z-index: 1;
 }
 
-/* .conteinerMain .boxOne .titleMain.active {
-    color: transparent;
-} */
-
 .conteinerMain .boxOne .parrafoMain {
     font-family: var(--font-parrafos);
     color: #FDFFFA;
@@ -262,32 +257,9 @@ header .hamburger div {
         padding: 1rem 1rem;
     }
 
-    /* header nav {
-        animation: pantallaMobile 1s ease-in-out normal;
-    }
-
-
-    @keyframes pantallaMobile {
-
-        0% {
-
-            right: 100%;
-        }
-
-        100% {
-            height: 78%;
-        }
-
-    } */
-
     header nav.active {
-
-        /* top: 4rem; */
         padding: 2rem 1rem;
-
     }
-
-
 
     .conteinerMain {
         flex-direction: column;
@@ -295,7 +267,6 @@ header .hamburger div {
         padding: 2rem 1rem;
         justify-content: start;
         align-items: start;
-
     }
 
     .conteinerMain .boxOne {
@@ -327,6 +298,5 @@ header .hamburger div {
         width: 100%;
         height: 320px;
     }
-
 
 }
