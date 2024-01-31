@@ -71,7 +71,7 @@ header nav {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29cb);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    animation: pantalla 2s ease alternate;
+    animation: pantalla 1s ease alternate;
     z-index: 998;
 }
 
