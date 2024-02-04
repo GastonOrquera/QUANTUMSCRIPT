@@ -355,4 +355,8 @@ header .hamburger div {
         height: 320px;
     }
 
+    .boxServices {
+        padding: 1rem 1rem;
+    }
+
 }
