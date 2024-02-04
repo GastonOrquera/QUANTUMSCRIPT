@@ -14,15 +14,16 @@
 
 .background {
     /* background-color: #3F2443; */
-    height: 96vh;
-    background: #0f0c29;
-    /* fallback for old browsers */
+    height: 100vh;
+    /* background: #0f0c29;
+
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
 
 
+
+    background: #10103A;
 }
 
 header {
@@ -65,12 +66,15 @@ header nav {
     right: 0;
     /* background-color: #4c2750; */
     /* background-color: #46294b; */
-    background: #0f0c29;
-    /* fallback for old browsers */
+
+    /* background: #0f0c29;
+
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29c0);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29cb);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29cb); */
+
+    background: #10103A;
+    opacity: 90%;
     animation: pantalla 1s ease alternate;
     z-index: 998;
 }
@@ -240,12 +244,15 @@ header .hamburger div {
 }
 
 .conteinerMain .imgBackground {
-    background-image: url(../img/slider-img.png);
+    /* background-image: url(../img/slider-img.png); */
+    background-image: url(../img/img.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-position: bottom; */
+    /* background-size: cover; */
     height: 400px;
-    width: 50%;
-    border-radius: 260px;
+    width: 400px;
+    max-height: max-content;
 }
 
 
@@ -253,14 +260,17 @@ header .hamburger div {
 /* SERVICES */
 
 .boxServices {
-    background: #0f0c29;
-    /* fallback for old browsers */
+
+    background: #10103A;
+    /* background: #0f0c29;
+ 
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+
     padding: 2rem 2rem;
-    border-top: 1px solid #DD0556
+    border-top: 1px groove #DD0556;
+
 }
 
 .boxServices h2 {
@@ -313,8 +323,16 @@ header .hamburger div {
         padding: 1rem 1rem;
     }
 
+    header nav {
+        height: 92.05vh;
+    }
+
     header nav.active {
         padding: 2rem 1rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.1rem;
     }
 
     .conteinerMain {
