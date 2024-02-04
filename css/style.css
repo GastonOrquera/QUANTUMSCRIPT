@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -268,10 +268,10 @@ header .hamburger div {
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
 
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+    display: flex;
 
     padding: 2rem 2rem;
     border-top: 1px solid #DD0556;
-
 }
 
 .boxServices h2 {
@@ -310,7 +310,23 @@ header .hamburger div {
 
 }
 
+.boxServices .imgBackgroundServicios {
+    background-image: url(../img/slider-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: bottom; */
+    /* background-size: cover; */
+    height: 400px;
+    width: 400px;
+    display: flex;
+}
 
+.boxServices .flex {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #e7065917; */
+    margin-left: 4rem;
+}
 
 
 @media only screen and (max-width: 1000px) {
@@ -366,7 +382,8 @@ header .hamburger div {
         padding: .480rem 2rem;
     }
 
-    .conteinerMain .imgBackground {
+    .conteinerMain .imgBackground,
+    .boxServices .imgBackgroundServicios {
         background-position: center;
         border-radius: 60px;
         width: 100%;
@@ -375,6 +392,12 @@ header .hamburger div {
 
     .boxServices {
         padding: 1rem 1rem;
+        flex-direction: column;
     }
+
+    .boxServices .flex {
+        margin-left: 0;
+    }
+
 
 }
