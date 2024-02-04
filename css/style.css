@@ -240,7 +240,7 @@ header .hamburger div {
 }
 
 .conteinerMain .imgBackground {
-    background-image: url(../img/imgBackground.png);
+    background-image: url(../img/slider-img.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
