@@ -74,9 +74,10 @@ header nav {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29cb); */
 
     background: #10103A;
-    opacity: 90%;
+    opacity: 96%;
     animation: pantalla 1s ease alternate;
     z-index: 998;
+    padding: 2rem 2rem;
 }
 
 @keyframes pantalla {
@@ -94,7 +95,6 @@ header nav {
 header nav.active {
     display: block;
     top: 4rem;
-    padding: 2rem 2rem;
 }
 
 header nav ul {
@@ -252,7 +252,8 @@ header .hamburger div {
     /* background-size: cover; */
     height: 400px;
     width: 400px;
-    max-height: max-content;
+
+
 }
 
 
@@ -269,7 +270,7 @@ header .hamburger div {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
 
     padding: 2rem 2rem;
-    border-top: 1px groove #DD0556;
+    border-top: 1px solid #DD0556;
 
 }
 
@@ -315,8 +316,7 @@ header .hamburger div {
 @media only screen and (max-width: 1000px) {
 
     .background {
-
-        overflow: hidden;
+        height: 96vh;
     }
 
     header {
@@ -324,12 +324,12 @@ header .hamburger div {
     }
 
     header nav {
-        height: 92.05vh;
+        height: 88vh;
+        padding: 2rem 1rem;
+
     }
 
-    header nav.active {
-        padding: 2rem 1rem;
-    }
+
 
     header nav ul li a {
         font-size: 1.1rem;
